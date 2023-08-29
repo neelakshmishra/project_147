@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>project 147</title>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"> </script>
+
+</head>
+<body>
+    <a-scene>
+        <a-camera position = "0 5 15"></a-camera>
+        <a-sky src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/sky.jpg"></a-sky>
+       
+        <!--wall-->
+        <a-plane
+        id="wall"
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/wall.jpeg"
+        position="0 6 -4.3"
+        rotation="0 0 0"
+        width="25"
+        height="14"
+        ></a-plane>
+        
+        <!--ground-->
+        <a-plane
+        id="ground"
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/ground.webp"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="25"
+        height="14"
+        ></a-plane>
+        
+        <a-plane
+        id="wall-poster-right"
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/left-poster.png"
+        position="5 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+        ></a-plane>
+        
+        <a-plane
+        id="wall-poster-middle"
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/middle-poster.png"
+        position="0 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+        ></a-plane>
+        
+        <a-plane
+        id="wall-poster-left"
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/left-poster.png"
+        position="-5 6 -3.3"
+        rotation="0 0 0"
+        width="4"
+        height="6"
+        ></a-plane>
+
+        <!--table-->
+        <a-box
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+        width="9"
+        height="3.5"
+        position="0 2 0"
+        rotation="90 0 0"
+        depth="0.2"
+      >
+        <a-cylinder
+          src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"
+          height="2"
+          radius="0.8"
+          rotation="90 0 0"
+          position="0 0 1"
+        ></a-cylinder>
+      </a-box>
+      <a-cylinder height = "2" radius="0.2" color = "pink" position="0 12 0">
+        <a-cone radius-top="0.2" radius-bottom="2" height="1" color="pink" position="0 -1 0">
+
+        </a-cone>
+        <a-sphere radius="1" color = "yellow" position="0 -1.6 0"></a-sphere>
+      </a-cylinder>
+
+
+    </a-scene>
+</body>
+</html>
